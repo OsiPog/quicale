@@ -24,7 +24,7 @@ const lang = {
         ]
     },
     "Deutsch": {
-        "subtitle": "...Schnell einfache Kalender generieren",
+        "subtitle": "...Schnell, einfache Kalender generieren",
         "starts_at": "Kalender beginnt im...",
         "ends_at": "und endet im...",
         "generate": "Generieren",
@@ -44,4 +44,26 @@ const lang = {
             "Dezember"
         ]
     },
+
+    "Polski": {
+        "subtitle": "...Szybko generuj proste kalendarze",
+        "starts_at": "Kalendarz zaczyna się o...",
+        "ends_at": "a kończy o...",
+        "generate": "Generować",
+        "day": ["Pn", "Wt", "Śr", "Cz", "Pt", "So", "Nd"],
+        "month": [
+            "Styczeń",
+            "Luty",
+            "Marzec",
+            "Kwiecień",
+            "Maj",
+            "Czerwiec",
+            "Lipiec",
+            "Sierpień",
+            "Wrzesień",
+            "Październik",
+            "Listopad",
+            "Grudzień"
+        ]
+    }
 }
