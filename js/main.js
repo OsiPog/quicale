@@ -8,6 +8,8 @@ const div_ends_at = document.querySelector(
 const select_language = document.querySelector("#language-box>select");
 const input_generate_button = document.querySelector("input.important-button");
 
+input_generate_button.addEventListener("click", generateCalendar)
+
 // Adding available languages into the selectable
 for(let language in lang) {
     const option = document.createElement("option");
@@ -28,7 +30,11 @@ select_language.addEventListener("change", () => {
 
     input_generate_button.value = getLangStr("generate");
 
-    // generateCalendar()
+    // Updating month strings
+    updateSelect(div_ends_at, div_starts_at, 1)
+    
+    // Regenerate the calendar with the new names
+    generateCalendar()
 })
 
 // These functions makes sure that the user won't be able to select a starts at

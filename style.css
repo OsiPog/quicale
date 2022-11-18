@@ -3,6 +3,9 @@
     font-size: 16px;
 }
 
+[hidden] {
+    display: none !important;
+}
 
 h1 {
     font-size: 3rem;
@@ -52,6 +55,9 @@ h1 {
     flex-direction: row;
 
     width: min-content;
+    height: min-content;
+
+    align-self: center;
 }
     .selection-box select {
         margin: 0rem;
@@ -59,11 +65,14 @@ h1 {
         border: none;
 
         font-size: 1rem;
+        text-align: center;
     }
 
 .important-button {
     font-size: 2rem;
     font-weight: bold;
+
+    cursor: pointer;
 
     background-color: #00000000;
     align-self: center;
@@ -73,6 +82,8 @@ h1 {
     border-radius: 1rem;
     border-color: #000000;
     border-width: 0.2rem;
+
+    margin: 1rem;
 }
 .important-button:active {
     box-shadow: 0 0 0.2rem 0.1rem;
@@ -95,22 +106,23 @@ h1 {
         margin: 0.2rem
 
     }
-        .calendar .month .week {
+        .calendar .month .weeks {
             border-top: 0.15rem solid #000000;
             width: 12rem;
+            margin: 0.5rem;
         }
-        .calendar .month .week th {
+        .calendar .month .weeks th {
             font-size: 0.5rem;
         }
-        .calendar .month .week td {
+        .calendar .month .weeks td {
             text-align: center;
             font-size: 0.9rem;
             font-weight: bold;
         }
-        .calendar .month .week td:nth-last-child(1), 
-        .calendar .month .week td:nth-last-child(2),
-        .calendar .month .week th:nth-last-child(1), 
-        .calendar .month .week th:nth-last-child(2) {
+        .calendar .month .weeks td:nth-last-child(1), 
+        .calendar .month .weeks td:nth-last-child(2),
+        .calendar .month .weeks th:nth-last-child(1), 
+        .calendar .month .weeks th:nth-last-child(2) {
             color: #525252
         }
 
