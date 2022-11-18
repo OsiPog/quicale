@@ -38,11 +38,12 @@ const generateCalendar = () => {
 
             // Getting the amount the first day of the month is offset in the
             // first week in the month.
-            let day_of_month = 2-(new Date(year, month, 1).getDay());
+            // -7 for the case of the day being 0, then it would be 2
+            let day_of_month = 2-(new Date(year, month, 1).getDay())-7;
             const last_day = new Date(year, month + 1, 0).getDate()
 
             // Row by row
-            for(let r=0;r<6;r++) {
+            for(let r=0;r<7;r++) {
                 const tr = document.createElement("tr");
                 for(let i=0;i<7;i++) {
                     // That would be the table headings
@@ -53,7 +54,7 @@ const generateCalendar = () => {
                         continue
                     }
 
-                    // Normal day
+                    // Normal days
                     const td = document.createElement("td");
                     if((day_of_month > 0) && (day_of_month <= last_day)) { 
                         td.innerText = day_of_month;
