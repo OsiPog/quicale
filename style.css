@@ -3,22 +3,6 @@
     font-size: 16px;
 }
 
-@media(max-width:95vh) {
-    .selection-box {
-        display: unset !important;
-    }
-    .selection-box .box {
-        padding: 0.3rem;
-        margin: auto;
-    }
-    .selection-box .box select {
-        font-size: 1.5rem !important;
-    }
-
-    h1 span {
-        display: none !important;
-    }
-}
 
 h1 {
     font-size: 3rem;
@@ -36,38 +20,51 @@ h1 {
     flex-direction: column;
 }
 
-.selection-box {
+.root-flex-overlay-con {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    margin: 0.5rem
+}
+
+.selection {
     margin: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-    .selection-box h2 {
+    .selection h2 {
         margin: 0.5rem
     }
-    .selection-box .box {
-        border-style: solid;
-        border-radius: 1rem;
-        border-color: #000000;
-        border-width: 0.2rem;
+.selection-box {
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: #000000;
+    border-width: 0.2rem;
 
-        margin-right: 0.5rem;
+    margin-right: 0.5rem;
 
-        display: flex;
-        flex-direction: row;
+    display: flex;
+    flex-direction: row;
 
-        width: min-content;
+    width: min-content;
+}
+    .selection-box select {
+        margin: 0rem;
+        background-color: #00000000;
+        border: none;
+
+        font-size: 1rem;
     }
-        .selection-box .box select {
-            margin: 0rem;
-            background-color: #00000000;
-            border: none;
-
-            font-size: 1rem;
-        }
 
 .important-button {
     font-size: 2rem;
+    font-weight: bold;
+
     background-color: #00000000;
     align-self: center;
     width: min-content;

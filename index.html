@@ -7,27 +7,23 @@
   <body>
     <div class="root-flex-con">
         <h1>Quicale<span>...Quickly generate simple calendars</span></h1>
-        <div class="selection-box" id="start-time-select">
+        <div class="selection" id="start-time-select">
             <h2>Calendar starts at...</h2>
-            <div class="box">
+            <div class="selection-box" id="starts-at-box">
                 <select name="month">
-                    <option value="0">January</option>
-                    <option value="1" selected>Feburary</option>
+                    <option value="0" selected>January</option>
                 </select>
                 <select name="year">
-                    <option value="1970">1970</option>
-                    <option value="1971" selected>1971</option>
+                    <option value="1970" selected>1970</option>
                 </select>
             </div>
             <h2>and ends at...</h2>
-            <div class="box">
+            <div class="selection-box" id="ends-at-box">
                 <select name="month">
-                    <option value="0">January</option>
-                    <option value="1" selected>Feburary</option>
+                    <option value="0" selected>January</option>
                 </select>
                 <select name="year">
-                    <option value="1970">1970</option>
-                    <option value="1971" selected>1971</option>
+                    <option value="1970" selected>1970</option>
                 </select>
             </div>
         </div>
@@ -95,6 +91,14 @@
             </div>
         </div>
     </div>
+    <div class="root-flex-overlay-con">
+        <div class="selection-box" id="language-box">
+            <select name="language">
+            </select>
+        </div>
+    </div>
+        <script src="js/lang.js"></script>
+        <script src="js/selection.js"></script>
         <script src="js/main.js"></script>
   </body>
 </html>
