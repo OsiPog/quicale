@@ -5,6 +5,96 @@
     <title>Quicale</title>
   </head>
   <body>
-    <script src="main.js"></script>
+    <div class="root-flex-con">
+        <h1>Quicale<span>...Quickly generate simple calendars</span></h1>
+        <div class="selection-box" id="start-time-select">
+            <h2>Calendar starts at...</h2>
+            <div class="box">
+                <select name="month">
+                    <option value="0">January</option>
+                    <option value="1" selected>Feburary</option>
+                </select>
+                <select name="year">
+                    <option value="1970">1970</option>
+                    <option value="1971" selected>1971</option>
+                </select>
+            </div>
+            <h2>and ends at...</h2>
+            <div class="box">
+                <select name="month">
+                    <option value="0">January</option>
+                    <option value="1" selected>Feburary</option>
+                </select>
+                <select name="year">
+                    <option value="1970">1970</option>
+                    <option value="1971" selected>1971</option>
+                </select>
+            </div>
+        </div>
+        <input class="important-button" type="button" value="Generate"/>
+
+        <div class="calendar">
+            <div class="month">
+                <h3>January 1970</h3>
+                <table class="week">
+                    <tr>
+                        <th>Mo</th>
+                        <th>Tu</th>
+                        <th>We</th>
+                        <th>Th</th>
+                        <th>Fr</th>
+                        <th>Sa</th>
+                        <th>Su</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                    </tr>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,120 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+@media(max-width:95vh) {
+    .selection-box {
+        display: unset !important;
+    }
+    .selection-box .box {
+        padding: 0.3rem;
+        margin: auto;
+    }
+    .selection-box .box select {
+        font-size: 1.5rem !important;
+    }
+
+    h1 span {
+        display: none !important;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0.5rem
+}
+    h1 span {
+        margin-left: 0.5rem;
+        font-weight: normal;
+        font-size: 0.5em;
+    }
+
+.root-flex-con {
+    display: flex;
+    flex-direction: column;
+}
+
+.selection-box {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    .selection-box h2 {
+        margin: 0.5rem
+    }
+    .selection-box .box {
+        border-style: solid;
+        border-radius: 1rem;
+        border-color: #000000;
+        border-width: 0.2rem;
+
+        margin-right: 0.5rem;
+
+        display: flex;
+        flex-direction: row;
+
+        width: min-content;
+    }
+        .selection-box .box select {
+            margin: 0rem;
+            background-color: #00000000;
+            border: none;
+
+            font-size: 1rem;
+        }
+
+.important-button {
+    font-size: 2rem;
+    background-color: #00000000;
+    align-self: center;
+    width: min-content;
+
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: #000000;
+    border-width: 0.2rem;
+}
+.important-button:active {
+    box-shadow: 0 0 0.2rem 0.1rem;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 1rem;
+}
+    .calendar .month {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .calendar h3 {
+        margin: 0.2rem
+
+    }
+        .calendar .month .week {
+            border-top: 0.15rem solid #000000;
+            width: 12rem;
+        }
+        .calendar .month .week th {
+            font-size: 0.5rem;
+        }
+        .calendar .month .week td {
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        .calendar .month .week td:nth-last-child(1), 
+        .calendar .month .week td:nth-last-child(2),
+        .calendar .month .week th:nth-last-child(1), 
+        .calendar .month .week th:nth-last-child(2) {
+            color: #525252
+        }
+
+
