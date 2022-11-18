@@ -47,9 +47,9 @@ const lang = {
 
     "Polski": {
         "subtitle": "...Szybko generuj proste kalendarze",
-        "starts_at": "Kalendarz zaczyna się o...",
-        "ends_at": "a kończy o...",
-        "generate": "Generować",
+        "starts_at": "Kalendarz zaczyna się...",
+        "ends_at": "a kończy...",
+        "generate": "Generuj",
         "day": ["Pn", "Wt", "Śr", "Cz", "Pt", "So", "Nd"],
         "month": [
             "Styczeń",
